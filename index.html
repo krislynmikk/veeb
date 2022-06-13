@@ -7,7 +7,8 @@
     <meta name="keywords" content="job, work, resume, estonia">
     <meta name="author" content="Krislyn M">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Krislyn</title>
+    <title>krislyn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,66 +17,145 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="float-panel.js"></script>
+    <script src="script.js"></script>
     <style>
         body {
-            display: flex;
             color: #1c1c1c;
             font-family: 'Montserrat' , sans-serif;
-            background-image: linear-gradient(to right, #ecebe424, #FAFAFF);
+            background-image: linear-gradient(to right, #ecebe414, #FAFAFF);
+            scroll-behavior: smooth;
             }
       </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="container">
-        <div class="row row-header">
-        <div class="col-md-12 header">
-            <h2 class="rotate">Krislyn</h2>
-            <h2>Mikk</h2>
-        </div>
+
+        <div class="row row-header" id="row-header">
+          <div class="header">
+              <div class="header-image"></div>
         <div class="col-md-12 navbar" role="navigation">
             <nav class="navbar navbar-expand-lg">
                      <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" data-value="about" href="#">Siia</a></li>  
+                            <a class="nav-link" data-value="experience" href="#row-experience"><h5>Experience</h5></a></li>  
                         <li class="nav-item">
-                            <a class="nav-link " data-value="portfolio"href="#">Tuleb</a></li>
-                            <li class="nav-item"> 
-                            <a class="nav-link " data-value="blog" href="#">Mingi</a></li>   
-                        <li class="nav-item">  
-                            <a class="nav-link " data-value="team" href="#">Valik</a></li>  
+                            <a class="nav-link " data-value="skills"href="#row-timeline"><h5>Skills</h5></a></li>
                         <li class="nav-item"> 
-                            <a class="nav-link " data-value="contact" href="#">Varsti</a></li> 
-               </ul></nav>
+                            <a class="nav-link " data-value="interests" href="#row-interests"><h5>Interests</h5></a></li>   
+                        <li class="nav-item">  
+                            <a class="nav-link " data-value="contact" href="#row-contact"><h5>Contact</h5></a></li>  
+                        <li class="nav-item"> 
+                            <a class="nav-link " data-value="aboutme" href="#row-aboutme"><h5>About me</h5></a></li> 
+                    </ul></nav>
             </div>
+          </div>
         </div>
-    <div class="row row-timeline"> 
-        <div class="col-md-12">
-            <h1>Skills</h1>
-        </div>
-        <div class="col-md-4 timeline">
-            <div class="card-body">
-                <h4 class="small font-weight-bold">Server Migration <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Sales done <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Customer Database <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Affiliate payouts <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Account Setup</h4>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
+  <div class="container-fluid">
+        <div class="container">
+        <div class="row row-aboutme" id="row-aboutme">
+            <div class="col-md-12 aboutme">
+              <div>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, commodi? Libero quas dignissimos molestiae asperiores. Vero nam, expedita facilis blanditiis natus iste soluta aperiam ad atque cupiditate debitis tempore magnam.</p>
               </div>
+            </div>
+            </div>
+        <div class="row row-experience" id="row-experience">
+            <div class="col-md-12 animate__animated animate__fadeInDown">
+                <h1>Education and experience</h1>
+            </div>
+            <div class="col-md-6 education">
+                <div class="rightbox">
+                    <div class="rb-container">
+                      <ul class="rb">
+                        <li class="rb-item" ng-repeat="itembx">
+                          <div class="timestamp animate__animated animate__fadeInDown">
+                            <h6>2007</h6>
+                          </div>
+                          <div class="item-title">
+                            <h4 class="animate__animated animate__fadeInDown">Graduated from Viljandi Maagümnaasium</h4>
+                            <p class="animate__animated animate__fadeInDown">Secondary Education</p>
+                          </div>
+                        </li>
+                        <li class="rb-item" ng-repeat="itembx">
+                            <div class="timestamp animate__animated animate__fadeInDown">
+                                <h6>2012</h6>
+                            </div>
+                            <div class="item-title">
+                                <h4 class="animate__animated animate__fadeInDown">Graduated from Olustvere School of Rural and Economics</h4>
+                                <p class="animate__animated animate__fadeInDown">Secondary Vocational Education</p>
+                            </div>
+                          </li>
+                      </ul>            
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-6 work">
+                <div class="rightbox">
+                    <div class="rb-container">
+                      <ul class="rb">
+                          <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp animate__animated animate__fadeInDown">
+                                    <h6>2012</h6>
+                                </div>
+                                <div class="item-title">
+                                    <h4 class="animate__animated animate__fadeInDown">Started working at G4S Eesti AS</h4>
+                                    <p class="animate__animated animate__fadeInDown">Airport security</p>            
+                                </div>           
+                            </li>          
+                            <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp animate__animated animate__fadeInDown">
+                                    <h6>2018</h6>
+                                </div>
+                                <div class="item-title">                    
+                                    <h4 class="animate__animated animate__fadeInDown">Started working at Lindström OÜ</h4>
+                                    <p class="animate__animated animate__fadeInDown">Customer service representative, sales representative</p>
+                                </div>          
+                            </li>   
+                                <li class="rb-item" ng-repeat="itembx">
+                                <div class="timestamp animate__animated animate__fadeInDown">
+                                    <h6>2021</h6>
+                                </div>
+                                <div class="item-title">                    
+                                    <h4 class="animate__animated animate__fadeInDown">Started career break</h4>
+                                    <p class="animate__animated animate__fadeInDown">Changing field</p>
+                                </div>           
+                                </li>       
+                            </ul>
+          </div></div></div></div>    
+        <div class="row row-timeline" id="row-timeline"> 
+            <div class="col-md-12">
+                <h1>Skills</h1>
+            </div>
+          <div class="col-md-4 personal">
+            <div class="card-body">
+                <h4 class="small font-weight-bold ">Attention to detail<span class="float-right"></span></h4>
+                <div class="progress mb-4 ">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="small font-weight-bold">Problem-solving<span class="float-right"></span></h4>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="small font-weight-bold">Communication<span class="float-right"></span></h4>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="small font-weight-bold">Responsibilty<span class="float-right"></span></h4>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="small font-weight-bold">Multitasking<span class="float-right"></span></h4>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="small font-weight-bold">Teamwork<span class="float-right"></span></h4>
+                <div class="progress mb-4">
+                  <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="small font-weight-bold">Analysis</h4>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div></div></div>
 <!--
                 <div class="rightbox">
                 <div class="rb-container">
@@ -121,216 +201,104 @@
           </div>
 
 -->
-        </div>
-        <div class="col-md-4 languages">
-                <div class="card-body">
-                  <h4 class="small font-weight-bold">Server Migration <span class="float-right"></span></h4>
+          <div class="col-md-4 skills">
+                  <div class="card-body">
+                    <h4 class="small font-weight-bold">Microsoft Office<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Typing<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Web development<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Operating systems<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Web browsers<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Graphics<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Online researching<span class="float-right"></span></h4>
+                    <div class="progress mb-4">
+                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Multimedia</h4>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div></div></div>
+          <div class="col-md-4 org-languages">
+              <div class="card-body">
+                  <h4 class="small font-weight-bold">Estonian<span class="float-right"></span></h4>
                   <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" id="progressBar" role="progressbar" style="width: 100%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <h4 class="small font-weight-bold">Sales done <span class="float-right"></span></h4>
+                  <h4 class="small font-weight-bold">English<span class="float-right"></span></h4>
                   <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  <h4 class="small font-weight-bold">Customer Database <span class="float-right"></span></h4>
+                  <h4 class="small font-weight-bold">Russian<span class="float-right"></span></h4>
                   <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Affiliate payouts <span class="float-right"></span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Account Setup</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-    </div>
-        <div class="col-md-4 org-skills">
-            <div class="card-body">
-                <h4 class="small font-weight-bold">Server Migration <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Sales done <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Customer Database <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Affiliate payouts <span class="float-right"></span></h4>
-                <div class="progress mb-4">
-                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">Account Setup</h4>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-        </div>
-    </div>
-    <div class="row row-interests">
-        <div class="col-md-12">
-            <h1>Interests</h1></div>
-        <div class="col-md-12 interests">
-            <div class="col-md-2 hobbie">
-                <img src="images/icons/plant.png" alt="">
-            <p>Gardening</p></div>
-            <div class="col-md-2 hobbie">
-                <img src="images/icons/filming.png" alt="" srcset="">
-            <p>Filming and editing</p></div>
-            <div class="col-md-2 hobbie">
-                <img src="images/icons/needle.png" alt="" srcset="">
-            <p>Arts and crafts</p></div>
-            <div class="col-md-2 hobbie">
-                <img src="images/icons/laptop.png" alt="" srcset="">
-            <p>Computers</p></div>
-        </div></div>
-    <div class="row row-experience">
-        <div class="col-md-12">
-            <h1>Education and experience</h1>
-        </div>
-        <div class="col-md-6 education">
-            <div class="rightbox">
-                <div class="rb-container">
-                  <ul class="rb">
-                    <li class="rb-item" ng-repeat="itembx">
-                      <div class="timestamp">
-                        <h6>2007</h6>
-                      </div>
-                      <div class="item-title">
-                        <h6>Graduated from Viljandi Maagümnaasium</h6>
-                        <p>Secondary Education</p>
-                      </div>
-                    </li>
-                    <li class="rb-item" ng-repeat="itembx">
-                        <div class="timestamp">
-                            <h6>2012</h6>
-                        </div>
-                        <div class="item-title">
-                            <h6>Graduated from Olustvere School of Rural and Economics</h6>
-                            <p>Secondary Vocational Education</p>
-                        </div>
-                      </li>
-                  </ul>            
-                </div>
-          </div>
-        </div>
-        <div class="col-md-6 work">
-            <div class="rightbox">
-                <div class="rb-container">
-                  <ul class="rb">
-                      <li class="rb-item" ng-repeat="itembx">
-                            <div class="timestamp">
-                                <h6>2012</h6>
-                            </div>
-                            <div class="item-title">
-                                <h6>Started working at G4S Eesti AS</h6>
-                                <p>Airport security</p>            
-                            </div>           
-                        </li>          
-                        <li class="rb-item" ng-repeat="itembx">
-                            <div class="timestamp">
-                                <h6>2018</h6>
-                            </div>
-                            <div class="item-title">                    
-                                <h6>Started working at Lindström OÜ</h6>
-                                <p>Customer service representative, sales representative</p>
-                            </div>          
-                        </li>   
-                            <li class="rb-item" ng-repeat="itembx">
-                            <div class="timestamp">
-                                <h6>2021</h6>
-                            </div>
-                            <div class="item-title">                    
-                                <h6>Started career break</h6>
-                                <p>Changing field</p>
-                            </div>           
-                            </li>       
-                        </ul>
-                        </div>
-<!--
-                <div>
-                <h6>2007</h6>
-                <div>
-                    <h6>Graduated from Viljandi Maagümnaasium</h6>
-                    <p>Secondary Education</p>
-                </div>
-            </div>
-            <div>
-                <h6>2012</h6>
-                <div>
-                    <h6>Graduated from Olustvere School of Rural and Economics</h6>
-                    <p>Secondary Vocational Education</p>
-                </div>
-            </div>
-            <h1 class="work_title">Work experience</h1>
-            <div>
-                <h6>2012</h6>
-                <div>
-                    <h6>Started working at G4S Eesti AS</h6>
-                    <p>Airport security</p>
-                </div>
-            </div>
-            <div>
-                <h6>2018</h6>
-                <div>
-                    <h6>Started working at Lindström OÜ</h6>
-                    <p>Customer service representative, sales representative</p>
-                </div>
-            </div>
-            <div>
-                <h6>2021</h6>
-                <div>
-                    <h6>Started career break</h6>
-                    <p>Changing field</p>
-                </div>
-            </div>
--->
-        </div></div></div>
-        <div class="row row-contact">
+                    <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div></div></div></div>
+        <div class="row row-interests" id="row-interests">
+            <div class="col-md-12">
+                <h1>Interests</h1></div>
+            <div class="col-md-12 interests">
+                <div class="col-md-2 hobbie">
+                    <img src="images/icons/plant.png" alt="">
+                <p>Gardening</p></div>
+                <div class="col-md-2 hobbie">
+                    <img src="images/icons/filming.png" alt="" srcset="">
+                <p>Filming and editing</p></div>
+                <div class="col-md-2 hobbie">
+                    <img src="images/icons/needle.png" alt="" srcset="">
+                <p>Arts and crafts</p></div>
+                <div class="col-md-2 hobbie">
+                    <img src="images/icons/laptop.png" alt="" srcset="">
+                <p>Computers</p></div>
+            </div></div>
+        <div class="row row-contact" id="row-contact">
             <div class="col-md-12">
                 <h1>Contact</h1>
             </div>
-        <div class="col-md-6 contact">
-            <div class="card">
-                <div class="card-header">
-                    <img src="images/icons/laptop.png" alt="Profile Image" class="profile-img">
-                </div>
-                <div class="card-body">
-                    <p class="name">Krislyn Mikk</p>
-                    <a href="#" class="mail">krislynmikk@gmail.com</a>
-                    <p class="job">some text</p>
-                </div>
-        
-                <div class="social-links">
-                    <a href="#" class="fab fa-github social-icon"></a>
-                    <a href="#" class="fab fa-twitter social-icon"></a>
-                    <a href="#" class="fab fa-youtube social-icon"></a>
-                    <a href="#" class="fab fa-linkedin social-icon"></a>
-                </div>
-        
-                <div class="card-footer">
-                    <p class="count"><span>120k</span> Followers | <span>10k</span> Following</p>
-                </div>
-            </div>
+          <div class="col-md-6 contact">
+              <div class="card">
+                  <div class="card-body">
+                          <img src="images/profileimage.JPG" alt="Profile Image" class="profile-img">
+                      <p class="name">Krislyn Mikk</p>
+                      <a href="#" class="mail">krislynmikk@gmail.com</a>
+                      <p class="">
+                      </p>
+                  </div>
+                  <div class="social-links">
+                      <a href="https://www.facebook.com/krislynx/" class="fab fa-facebook social-icon"></a>
+                      <a href="https://www.instagram.com/krislynmikk/" class="fab fa-instagram social-icon"></a>
+                      <a href="https://www.youtube.com/channel/UC1CnktuVpSnJmWddM22qjwA" class="fab fa-youtube social-icon"></a>
+                      <a href="https://www.linkedin.com/in/krislyn-mikk/" class="fab fa-linkedin social-icon"></a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 maps">
+              <div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d259415.17900138936!2d24.45806256004156!3d59.47174208435547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929499df5616bf%3A0x400b36d18fc6270!2sTallinn!5e0!3m2!1sen!2see!4v1653235562741!5m2!1sen!2see" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
+          </div>
+          </div>
+        <div class="row row-footer">
+            <h1>©Krislyn Mikk <span><script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script></span></h1>
         </div>
-        <div class="col-md-6 maps">
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2091.7281870457787!2d24.499659315632424!3d58.3811207937243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ecfd19b2a15563%3A0xc0502386209e6c0f!2sSupeluse%201%2C%20P%C3%A4rnu%2C%2080014%20P%C3%A4rnu%20maakond!5e0!3m2!1sen!2see!4v1652775946390!5m2!1sen!2see" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
         </div>
-        </div>
-        <div class="row row-aboutme">
-        <div class="col-md-12 aboutme">
-            <div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, commodi? Libero quas dignissimos molestiae asperiores. Vero nam, expedita facilis blanditiis natus iste soluta aperiam ad atque cupiditate debitis tempore magnam.</p>
-            </div>
-        </div>
-    </div>
-    </div>
+</div>
 </div>
 </div>
 </div>
