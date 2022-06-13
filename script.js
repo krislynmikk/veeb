@@ -1,3 +1,7 @@
+function fun() {  
+  alert ("This site is still in the making. Press 'OK' to see work in progress");  
+  }  
+fun()
 function reveal() {
     var reveals = document.querySelectorAll(".row-experience, .row-timeline, .row-interests, .row-contact, .row-aboutme");
   
