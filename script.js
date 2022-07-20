@@ -1,9 +1,9 @@
 function fun() {  
   alert ("This site is still in the making. Press 'OK' to see work in progress");  
   }  
-fun()
+// fun()
 function reveal() {
-    var reveals = document.querySelectorAll(".row-experience, .row-timeline, .row-interests, .row-contact, .row-aboutme");
+    var reveals = document.querySelectorAll(".row-experience, .row-timeline, .row-interests, .row-contact, .row-aboutme, .row-train");
   
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
